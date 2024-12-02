@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Food Info</title>
+</head>
+<body>
+    <h1>Explore Romanian Foods</h1>
+    
+    <!-- Image Map -->
+    <h2>Good Fruits</h2>
+    <img class="center" src="img/fruit.jpg" alt="Fruit Bowl" usemap="#fruit">
+    <map name="fruit">
+        <area shape="rect" coords="130,288,349,325" href="https://en.wikipedia.org/wiki/Banana" target="_blank" alt="Banana">
+        <area shape="rect" coords="142,192,313,221" href="https://en.wikipedia.org/wiki/Apple" target="_blank" alt="Apple">
+        <area shape="rect" coords="149,344,277,368" href="https://en.wikipedia.org/wiki/Blueberry" target="_blank" alt="Blueberries">
+
+    </map>
+
+    
+    <div class="form-container">
+        <h2>Food Interest Form</h2>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+    
+            <div class="form-group">
+                <label for="destination">Favourite food:</label>
+                <select id="destination" name="destination">
+                    <option value="beach">Sarmale</option>
+                    <option value="mountain">Mamaliga</option>
+                    <option value="city">Ciorba de burta</option>
+                    <option value="countryside">Castraveti</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="date">Preferred Travel Dates:</label>
+                <input type="date" id="date" name="date">
+            </div>
+    
+            <div class="form-group">
+                <label>Special Preferences:</label>
+                <table>
+                    <tr>
+                        <td><label for="family-friendly">Family-friendly</label></td>
+                        <td><input type="checkbox" id="family-friendly" name="preferences" value="family-friendly"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="budget">Budget-friendly</label></td>
+                        <td><input type="checkbox" id="budget" name="preferences" value="budget"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="luxury">Luxury</label></td>
+                        <td><input type="checkbox" id="luxury" name="preferences" value="luxury"></td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="form-group">
+                <label>Accommodation Type:</label>
+                <table>
+                    <tr>
+                        <td><label for="hotel">Hotel</label></td>
+                        <td><input type="radio" id="hotel" name="accommodation" value="hotel"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="hostel">Hostel</label></td>
+                        <td><input type="radio" id="hostel" name="accommodation" value="hostel"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="vacation-rental">Vacation Rental</label></td>
+                        <td><input type="radio" id="vacation-rental" name="accommodation" value="vacation-rental"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="form-group">
+                <label>Food from the hotel:</label>
+                <table>
+                    <tr>
+                        <td><label for="breakfast-only">Breakfast only</label></td>
+                        <td><input type="radio" id="breakfast-only" name="food" value="breakfast-only"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="breakfast-and-lunch">Breakfast and lunch</label></td>
+                        <td><input type="radio" id="breakfast-and-lunch" name="food" value="breakfast-and-lunch"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="all-three-meals">All three meals</label></td>
+                        <td><input type="radio" id="all-three-meals" name="food" value="all-three-meals"></td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div class="form-group">
+                <label>Food types:</label>
+                <table>
+                    <tr>
+                        <td><label for="traditional">Traditional</label></td>
+                        <td><input type="checkbox" id="breakfast-only" name="preferences" value="breakfast-only"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="modern">Modern</label></td>
+                        <td><input type="checkbox" id="modern" name="preferences" value="modern"></td>
+                    </tr>
+                    
+                </table>
+            </div>
+    
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any other preferences or comments..."></textarea>
+            </div>
+    
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    
+    </body>
+    </html>
+    
